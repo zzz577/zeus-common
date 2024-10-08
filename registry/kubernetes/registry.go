@@ -114,7 +114,7 @@ func getClientSet() (*kubernetes.Clientset, error) {
 }
 
 // NewRegistry is used to initialize the Registry
-func NewRegistry(clientSet *kubernetes.Clientset) (*Registry, error) {
+func NewRegistry() (*Registry, error) {
 	clientSet, err := getClientSet()
 	if err != nil {
 		return nil, err
